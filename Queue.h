@@ -50,8 +50,8 @@ private:
     int front;
     int rear;
     T *items;
-    int maxQue;
-    int numItems;
+    int size;
+    int max_size;
 };
 
 #include "Queue.cpp"
