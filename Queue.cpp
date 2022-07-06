@@ -8,11 +8,11 @@ Queue<T>::Queue(int max)
 //       The array to hold the queue elements has been dynamically
 //       allocated.
 {
-    numItems = 0;
-    maxQue = max;
+    size = 0;
+    max_size = max;
     front = 0;
-    rear = maxQue - 1;
-    items = new T[maxQue];
+    rear = front - 1;
+    items = new T[max];
 }
 
 template<class T>
@@ -21,11 +21,11 @@ Queue<T>::Queue()          // Default class constructor
 //       The array to hold the queue elements has been dynamically
 //       allocated.
 {
-    numItems = 0;
-    maxQue = 500;
+    size = 0;
+    max_size = 500;
     front = 0;
-    rear = maxQue - 1;
-    items = new T[maxQue];
+    rear = front - 1;
+    items = new T[max_size];
 }
 
 template<class T>
